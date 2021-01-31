@@ -1,0 +1,49 @@
+								
+								DATA VISUALIZATION
+
+
+matplotlib
+
+* 	Data vissualization using MATPLOTLIB.
+
+* 	Matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy. It provides an object-oriented API for embedding plots into applications 		using general-purpose GUI toolkits like Tkinter, wxPython, Qt, or GTK+.	
+
+pyplot
+
+*	pyplot is a collection of command style functions that make matplotlib work like MATLAB. Each pyplot function makes some change to a figure: e.g., creates a figure, creates a plotting area in a 	 figure, plots some lines in a plotting area, decorates the plot with labels
+
+subplots()
+
+*	 method provides a way to plot multiple plots on a single figure. Given the number of rows and columns , it returns a tuple ( fig , ax ), giving a single figure fig with an array of axes ax .
+
+eg:
+
+	import matplotlib.pyplot as plt		        :Import the matplotlib.pyplot API, using the conventional name plt.
+	fig, ax = plt.subplots()			        :Create Figure and Axes objects using the plt.subplots function.
+	plt.show() 						:Show the results, an empty set of axes, using the plt.show function.
+	
+	
+	ax.plot(w[x],s[y])	 			        : first argument is x axis data ,second argument is y axis data
+	plt.show		 				
+
+
+								PGM 1:	   
+
+# Import the matplotlib.pyplot submodule and name it plt
+
+import matplotlib.pyplot as plt
+# Create a Figure and an Axes with plt.subplots
+fig, ax = plt.subplots()
+
+# Plot MLY-PRCP-NORMAL from seattle_weather against the MONTH
+ax.plot(seattle_weather["MONTH"], seattle_weather["MLY-PRCP-NORMAL"] )
+
+# Plot MLY-PRCP-NORMAL from austin_weather against MONTH
+ax.plot(austin_weather["MONTH"], austin_weather["MLY-PRCP-NORMAL"])
+
+# Call the show function
+plt.show()	
+   
+	
+
+

@@ -1,0 +1,46 @@
+
+MARKERS:
+			
+		eg:
+
+				 ax.plot(w["x",w["y"], marker='v')
+				 plt.show()
+		 
+		 There are many type of markers like marker = 'o' etc.For more details about marker: https://matplotlib.org/api/markers_api.html
+
+LINE STYLE:
+
+		eg:
+		
+				 ax.plot(w["x",w["y"], marker='v', linestyle ="--")
+				 plt.show()
+
+
+	linestyle ="None"	
+	linestyle ="--"
+
+
+COLOR:
+
+		eg:	 
+		
+				ax.plot(w["x",w["y"], marker='v', linestyle ="--", color:"r")
+				plt.show()		
+				
+				
+CUSTOMMISING THE AXES LABELS:
+
+	for Title of the graph
+				
+				ax.set_title("Title of the graph")
+	for x axes
+				ax.set_xlabel("Time(month)")
+	for y axes
+				ax.set_ylabel("Y axis")
+				plt.show()
+	
+	
+							TASK 1:
+							
+
+				
